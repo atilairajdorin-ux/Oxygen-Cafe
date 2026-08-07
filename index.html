@@ -294,6 +294,11 @@
   .price-pair{display:flex;gap:14px;font-size:0.86rem;color:var(--cream-dim);}
   .price-pair span b{color:var(--sage);font-weight:500;}
   .item-note{font-size:0.78rem;color:var(--cream-dim);opacity:0.75;margin-right:6px;}
+  .item-block{margin-bottom:2px;}
+  .item-desc{
+    font-size:0.72rem;color:var(--cream-dim);opacity:0.65;
+    line-height:1.5;margin-top:-2px;margin-bottom:9px;padding-right:2px;
+  }
 
   /* ---------- FOOTER ---------- */
   footer{
@@ -308,6 +313,14 @@
   .footer-qr{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:40px;}
   .footer-qr canvas{border:1px solid var(--line-strong);padding:10px;background:var(--bg-soft);}
   .footer-qr-label{font-family:'Cormorant Garamond', serif;font-style:italic;color:var(--sage);font-size:0.9rem;}
+  .footer-contact{
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    margin-bottom:36px;color:var(--cream-dim);font-size:0.92rem;line-height:1.9;
+  }
+  .footer-contact a{color:var(--gold);transition:color .3s;}
+  .footer-contact a:hover{color:var(--cream);}
+  .footer-contact .contact-row{display:flex;align-items:center;gap:8px;}
+  .footer-contact .contact-label{color:var(--gold);font-size:0.78rem;letter-spacing:0.05em;}
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:860px){
@@ -605,11 +618,11 @@
       <summary><span class="summary-left"><span class="cat-icon"></span><span class="cat-num">14</span>دسر</span><span class="en" style="font-size:.85rem;color:var(--cream-dim);">Dessert</span></summary>
       <div class="cat-body">
         <div class="item-row"><span class="item-name">تیرامیسو</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
-        <div class="item-row"><span class="item-name">براونی</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
-        <div class="item-row"><span class="item-name">کوکی</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
-        <div class="item-row"><span class="item-name">باقلوا بستنی</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
-        <div class="item-row"><span class="item-name">چیزکیک</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
-        <div class="item-row"><span class="item-name">باقلوا</span><span class="item-fill"></span><span class="item-note">پرسنلی</span></div>
+        <div class="item-row"><span class="item-name">براونی</span><span class="item-fill"></span><span class="price-single">255</span></div>
+        <div class="item-row"><span class="item-name">کوکی</span><span class="item-fill"></span><span class="price-single">85</span></div>
+        <div class="item-row"><span class="item-name">باقلوا بستنی</span><span class="item-fill"></span><span class="price-single">385</span></div>
+        <div class="item-row"><span class="item-name">چیزکیک</span><span class="item-fill"></span><span class="price-single">235</span></div>
+        <div class="item-row"><span class="item-name">باقلوا</span><span class="item-fill"></span><span class="price-single">290</span></div>
         <div class="item-row"><span class="item-name">وافل بستنی و میوه</span><span class="item-fill"></span><span class="price-single">555</span></div>
       </div>
     </details>
@@ -617,14 +630,14 @@
     <details class="category">
       <summary><span class="summary-left"><span class="cat-icon"></span><span class="cat-num">15</span>یخچال</span><span class="en" style="font-size:.85rem;color:var(--cream-dim);">Fridge</span></summary>
       <div class="cat-body">
-        <div class="item-row"><span class="item-name">کوکاکولا</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">آب معدنی</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">اسپرایت</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">فانتا</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">اسمارت انرژی</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">ماءالشعیر سیب</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">ماءالشعیر استوایی</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
-        <div class="item-row"><span class="item-name">ماءالشعیر ساده</span><span class="item-fill"></span><span class="item-note">موجود</span></div>
+        <div class="item-row"><span class="item-name">کوکاکولا</span><span class="item-fill"></span><span class="price-single">90</span></div>
+        <div class="item-row"><span class="item-name">آب معدنی</span><span class="item-fill"></span><span class="price-single">20</span></div>
+        <div class="item-row"><span class="item-name">اسپرایت</span><span class="item-fill"></span><span class="price-single">90</span></div>
+        <div class="item-row"><span class="item-name">فانتا</span><span class="item-fill"></span><span class="price-single">90</span></div>
+        <div class="item-row"><span class="item-name">اسمارت انرژی</span><span class="item-fill"></span><span class="price-single">100</span></div>
+        <div class="item-row"><span class="item-name">ماءالشعیر سیب</span><span class="item-fill"></span><span class="price-single">90</span></div>
+        <div class="item-row"><span class="item-name">ماءالشعیر استوایی</span><span class="item-fill"></span><span class="price-single">90</span></div>
+        <div class="item-row"><span class="item-name">ماءالشعیر ساده</span><span class="item-fill"></span><span class="price-single">90</span></div>
       </div>
     </details>
 
@@ -632,10 +645,34 @@
       <summary><span class="summary-left"><span class="cat-icon"></span><span class="cat-num">16</span>میان‌وعده</span><span class="en" style="font-size:.85rem;color:var(--cream-dim);">Snacks</span></summary>
       <div class="cat-body">
         <div class="item-row"><span class="item-name">فرنچ فرایز (۵۰۰ گرم)</span><span class="item-fill"></span><span class="price-single">395</span></div>
+   <div class="item-row"><span class="item-name">فرنچ فرایز تنوری (۵۰۰ گرم)</span><span class="item-fill"></span><span class="price-single">450</span></div>
+   <div class="item-row"><span class="item-name"> چیز فرایز تنوری</span><span class="item-fill"></span><span class="price-single">525</span></div>
         <div class="item-row"><span class="item-name">چیز فرایز</span><span class="item-fill"></span><span class="price-single">450</span></div>
         <div class="item-row"><span class="item-name">ماشروم فرایز</span><span class="item-fill"></span><span class="price-single">435</span></div>
-        <div class="item-row"><span class="item-name">فرایز O2</span><span class="item-fill"></span><span class="price-single">480</span></div>
-        <div class="item-row"><span class="item-name">سالاد سزار گریل</span><span class="item-fill"></span><span class="price-single">795</span></div>
+
+        <div class="item-row"><span class="item-name"> ماشروم فرایزتنوری</span><span class="item-fill"></span><span class="price-single">499</span></div>
+
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">فرایز O2</span><span class="item-fill"></span><span class="price-single">480</span></div>
+          <div class="item-desc">شامل پنیر و قارچ</div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">فرایز تنوری O2</span><span class="item-fill"></span><span class="price-single">550</span></div>
+          <div class="item-desc">شامل پنیر و قارچ</div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">فرایز دبل O2</span><span class="item-fill"></span><span class="price-single">620</span></div>
+          <div class="item-desc">شامل سوسیس، پنیر و قارچ</div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">فرایز دبل تنوری O2</span><span class="item-fill"></span><span class="price-single">695</span></div>
+          <div class="item-desc">شامل سوسیس، قارچ و پنیر</div>
+        </div>
+
+    <div class="item-row"><span class="item-name">سالاد سزار گریل</span><span class="item-fill"></span><span class="price-single">795</span></div>
         <div class="item-row"><span class="item-name">سالاد سزار سوخاری</span><span class="item-fill"></span><span class="price-single">845</span></div>
       </div>
     </details>
@@ -645,13 +682,15 @@
       <div class="cat-body">
         <div class="item-row"><span class="item-name">پیتزا پپرونی</span><span class="item-fill"></span><span class="price-pair"><span>مینی <b>385</b></span><span>بزرگ <b>1,095</b></span></span></div>
         <div class="item-row"><span class="item-name">پیتزا بیکن</span><span class="item-fill"></span><span class="price-pair"><span>مینی <b>425</b></span><span>بزرگ <b>1,110</b></span></span></div>
-        <div class="item-row"><span class="item-name">پیتزا هاوایی</span><span class="item-fill"></span><span class="price-pair"><span>مینی <b>425</b></span><span>بزرگ <b>1,050</b></span></span></div>
-        <div class="item-row"><span class="item-name">پیتزا O2</span><span class="item-fill"></span><span class="price-single">1,200</span></div>
+        <div class="item-row"><span class="item-name">پیتزا چیکن</span><span class="item-fill"></span><span class="price-pair"><span>مینی <b>425</b></span><span>بزرگ <b>1,050</b></span></span></div>
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">پیتزا O2</span><span class="item-fill"></span><span class="price-single">1,200</span></div>
+          <div class="item-desc">ترکیب چیکن، بیکن و پپرونی</div>
+        </div>
         <div class="item-row"><span class="item-name">پنینی بیکن</span><span class="item-fill"></span><span class="price-single">895</span></div>
         <div class="item-row"><span class="item-name">پنینی فیله مرغ</span><span class="item-fill"></span><span class="price-single">795</span></div>
         <div class="item-row"><span class="item-name">پنینی تن ماهی و پنیر</span><span class="item-fill"></span><span class="price-single">800</span></div>
         <div class="item-row"><span class="item-name">پنینی کاپرزه</span><span class="item-fill"></span><span class="price-single">695</span></div>
-        <div class="item-row"><span class="item-name">پنینی O2</span><span class="item-fill"></span><span class="price-single">1,690</span></div>
         <div class="item-row"><span class="item-name">پنینی رژیمی</span><span class="item-fill"></span><span class="price-single">670</span></div>
       </div>
     </details>
@@ -665,7 +704,32 @@
         <div class="item-row"><span class="item-name">پنیر خامه‌ای گردو عسل</span><span class="item-fill"></span><span class="price-single">385</span></div>
         <div class="item-row"><span class="item-name">بیکن تخم‌مرغ چدار</span><span class="item-fill"></span><span class="price-single">430</span></div>
         <div class="item-row"><span class="item-name">قارچ موزارلا</span><span class="item-fill"></span><span class="price-single">380</span></div>
-        <div class="item-row"><span class="item-name">تست O2</span><span class="item-fill"></span><span class="price-single">450</span></div>
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">تست O2</span><span class="item-fill"></span><span class="price-single">450</span></div>
+          <div class="item-desc">شامل قارچ، پنیر و بیکن یا پروتئین</div>
+        </div>
+      </div>
+    </details>
+
+    <details class="category">
+      <summary><span class="summary-left"><span class="cat-icon"></span><span class="cat-num">19</span>سینی مزه</span><span class="en" style="font-size:.85rem;color:var(--cream-dim);">Sharing Platters</span></summary>
+      <div class="cat-body">
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">سینی O2</span><span class="item-fill"></span><span class="price-single">1,690</span></div>
+          <div class="item-desc">شامل ۴ عدد فیله گریل‌شده، قارچ گریل، سیب‌زمینی ویژه، پنیر، سوسیس سرخ‌شده، بیکن و گارنیش مخصوص</div>
+        </div>
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">سینی رژیمی</span><span class="item-fill"></span><span class="price-single">670</span></div>
+          <div class="item-desc">شامل ۴ عدد فیله گریل‌شده، سفیده تخم‌مرغ، قارچ گریل و گارنیش</div>
+        </div>
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">سینی پروتئین</span><span class="item-fill"></span><span class="price-single">480</span></div>
+          <div class="item-desc">شامل ۴ عدد فیله گریل‌شده و گارنیش</div>
+        </div>
+        <div class="item-block">
+          <div class="item-row"><span class="item-name">بوفالو وینگر</span><span class="item-fill"></span><span class="price-single">720</span></div>
+          <div class="item-desc">شامل ۷ تیکه بال مرینت‌شده به همراه گارنیش</div>
+        </div>
       </div>
     </details>
 
@@ -680,43 +744,24 @@
     <a href="#about">درباره ما</a>
   </div>
   <div class="footer-qr">
-    <canvas id="menuQr"></canvas>
+    <img src="data:image/png;base64,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" alt="QR code - scan to view menu" width="164" height="164" style="border:1px solid var(--line-strong);padding:10px;background:var(--bg-soft);">
     <p class="footer-qr-label en">Scan to view the menu</p>
+  </div>
+  <div class="footer-contact">
+    <div class="contact-row">
+      <span class="contact-label">آدرس</span>
+      <span>مجتمع خلیج فارس، طبقه اول، واحد ۱۰۲</span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">رزرو و سفارش</span>
+      <a href="tel:+989911020090" dir="ltr">۰۹۹۱۱۰۲۰۰۹۰</a>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">اینستاگرام</span>
+      <a href="https://instagram.com/20oxygen.cafe26" target="_blank" rel="noopener" class="en" dir="ltr">@20oxygen.cafe26</a>
+    </div>
   </div>
   <div class="footer-bottom">© تمامی حقوق برای کافه اکسیژن محفوظ است.</div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script>
-  (function(){
-    var target = window.location.origin + window.location.pathname + '#menu';
-    var holder = document.createElement('div');
-    holder.style.display = 'none';
-    document.body.appendChild(holder);
-    new QRCode(holder, {
-      text: target,
-      width: 140,
-      height: 140,
-      colorDark: '#efe9d8',
-      colorLight: '#181811',
-      correctLevel: QRCode.CorrectLevel.M
-    });
-    setTimeout(function(){
-      var img = holder.querySelector('img') || holder.querySelector('canvas');
-      var canvas = document.getElementById('menuQr');
-      if (img && canvas) {
-        canvas.width = 140;
-        canvas.height = 140;
-        var ctx = canvas.getContext('2d');
-        if (img.tagName === 'CANVAS') {
-          ctx.drawImage(img, 0, 0, 140, 140);
-        } else {
-          img.onload = function(){ ctx.drawImage(img, 0, 0, 140, 140); };
-          if (img.complete) ctx.drawImage(img, 0, 0, 140, 140);
-        }
-      }
-    }, 50);
-  })();
-</script>
-
 </body>
 </html>
